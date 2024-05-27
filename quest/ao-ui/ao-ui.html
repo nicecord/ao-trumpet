@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="module">
+			import { connect } from 'https://unpkg.com/@permaweb/aoconnect';
+			const { dryrun } = connect();
+			(async () => {
+				const processId = window.location.href.split('/')[3];
+				const result = await dryrun({
+					process: processId,
+					tags: [{ name: 'Action', value: 'Get-Ui-Info' }]
+				});
+				const info = result.Messages[0];
+				document.body.innerHTML = info;
+			})();
+		</script>
+	</head>
+	<body></body>
+</html>
