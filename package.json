@@ -17,6 +17,7 @@
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-vercel": "^5.3.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "^8.56.0",
@@ -36,6 +37,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@permaweb/aoconnect": "^0.0.54"
+		"@permaweb/aoconnect": "^0.0.54",
+		"@vercel/analytics": "^1.3.1",
+		"arweave": "^1.15.1"
 	}
 }
